@@ -1,51 +1,63 @@
-Ensino
+# 📚 Título do Projeto
 
-Repository to host the project developed for 'some class', a fisrt year subject at SOMESCHOOL. Developed by Group ALPHA : @MarcoOliveira, [add others].
-Short theme description
+Repositório criado para a unidade curricular Tecnologias Internet, do 1.º ano da licenciatura na UMAIA.
 
-An example report using markdown on Github. This documentation is writen using Markdown. Here is a link to the basic syntax, but an extended syntax is also available. If you're starting with Markdown, you may want to try a Markdown Tutorial and read the getting started section.
-Repository organization
+Desenvolvido pelo grupo inf24tig01:
+- Rodrigo Esteves
+- Romeu Pinto
+- Tiago Mendes
 
-Please help reader navigate around describing how the repository is organized by providing links
+---
 
-    Source code is in the src folder.
-    Report chapters are in doc folder.
+## 📝 Descrição do Tema
 
-Gallery 1
+eNSINO
 
-Please provide a galery of the final result, with small images A table may be usefull to organize the images.
-Technologies
+---
 
-Indicate the technologies you have used in this assignment. Please provide links for the user to read more about those technologies.
+## 📁 Organização do Repositório
 
-    XML
-    HTML5 + CSS3
-    Javascript
-    PHP
-    nodeJS
-    Any other?
+| Pasta       | Conteúdo                                 |
+|-------------|------------------------------------------|
+| `doc/`      | Relatório dividido por capítulos         |
+| `images/`   | Imagens usadas no relatório ou galeria   |
 
-Report
+---
 
-Please add at least on section (a file) per Chapter. But you can add more.
-Project presentation
+## 🖼️ Galeria de Imagens
 
-    Chapter 1: Project presentation
+| Exemplo 1                         | Exemplo 2                         |
+|----------------------------------|----------------------------------|
+| ![](images/exemplo1.png)         | ![](images/exemplo2.png)         |
 
-User Interface
+---
 
-    Chapter 2: User Interface Prototype and Sitemap
+## 💡 Tecnologias / Conceitos Utilizados
 
-Product
+- [Markdown](https://www.markdownguide.org/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Prototipagem (Figma)](https://www.figma.com/)
+- [XML](https://www.w3.org/XML/)
+- Outros...
 
-    Chapter 3: Product
+---
 
-Presentation
+## 📖 Estrutura do Relatório
 
-    Chapter 4: Presentation
+O relatório está dividido nos seguintes capítulos:
 
-Team
+- **[Capítulo 1 – Apresentação do Projeto](doc/capitulo1.md)**
+- **[Capítulo 2 – Protótipo e Mapa do Site](doc/capitulo2.md)**
+- **[Capítulo 3 – Produto Final](doc/capitulo3.md)**
+- **[Capítulo 4 – Apresentação Final](doc/capitulo4.md)**
 
-  Rodrigo Esteves
-  Romeu Pinto
-  Tiago Mendes
+---
+
+## 👥 Equipa
+
+| Nome            | Função                       |
+|-----------------|------------------------------|
+|Rodrigo Esteves  |------------------------------|
+|Romeu Pinto      |------------------------------|
+|Tiago Mendes     |------------------------------|
