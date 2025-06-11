@@ -1,4 +1,4 @@
-# 📚 Título do Projeto
+# 📚 Ensino Acadêmico vs Ensino Profissional
 
 Repositório criado para a unidade curricular Tecnologias Internet, do 1.º ano da licenciatura na UMAIA.
 
