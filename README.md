@@ -65,18 +65,16 @@ O relatório está dividido nos seguintes capítulos:
 
 | Nome             | Função                       |
 |----------------- |------------------------------|
-|Rodrigo Esteves   ||index.html (página principal)|
-|                  |  comparações.html|
-|                  |  Deploy no Netlify (publicar o site)|
-|                  |  README .md (documento geral do projeto no GitHub)|
-|                  |  m3 .md (descrição técnica detalhada)|
-|------------------|----------------------------------------------------|
+|Rodrigo Esteves   |index.html (página principal)|
+|Rodrigo Esteves   |comparações.html|
+|Rodrigo Esteves   |Deploy no Netlify (publicar o site)|
+|Rodrigo Esteves   |README .md (documento geral do projeto no GitHub)|
+|Rodrigo Esteves   |m3 .md (descrição técnica detalhada)|
 |Romeu Pinto       |percursos.html|
-|                  | formulário.html|
-|                  |dados.xml + schema XML|
-|------------------|----------------------------------------------------|
+|Romeu Pinto       | formulário.html|
+|Romeu Pinto       |dados.xml + schema XML|
 |Tiago Mendes      |style.css (todo o CSS)|
-|                  |script.js (todo o JavaScript)|
-|                  |m1 .md (descrição geral do projeto)|
-|                  |m2 .md (sitemap + wireframes)|
-|                  |m4 .md (apresentação)|
+|Tiago Mendes      |script.js (todo o JavaScript)|
+|Tiago Mendes      |m1 .md (descrição geral do projeto)|
+|Tiago Mendes      |m2 .md (sitemap + wireframes)|
+|Tiago Mendes      |m4 .md (apresentação)|
