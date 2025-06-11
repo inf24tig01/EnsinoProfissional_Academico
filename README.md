@@ -11,7 +11,15 @@ Desenvolvido pelo grupo inf24tig01:
 
 ## 📝 Descrição do Tema
 
-eNSINO
+Ensino Acadêmico vs Ensino Profissional
+
+Após o 9.º ano de escolaridade, os alunos em Portugal enfrentam uma decisão importante: escolher entre o Ensino Profissional ou o Ensino Académico. Esta escolha influencia não só o percurso educativo, mas também o futuro profissional e académico de cada estudante.
+
+O Ensino Profissional está focado em preparar os alunos para o mercado de trabalho, combinando formação teórica com formação prática, nomeadamente através da Formação em Contexto de Trabalho (FCT). No final, os alunos obtêm uma certificação de nível 4 do Quadro Nacional de Qualificações, equivalente ao 12.º ano, com competências técnicas específicas.
+
+Por outro lado, o Ensino Académico (como os cursos científico-humanísticos) é orientado para quem pretende prosseguir estudos no Ensino Superior, como universidades ou politécnicos. Tem uma abordagem mais teórica e generalista, com foco na preparação para os exames nacionais e acesso ao ensino superior.
+
+Ambos os percursos são válidos e oferecem diferentes oportunidades. A melhor escolha depende dos objetivos, interesses e estilo de aprendizagem de cada aluno.
 
 ---
 
@@ -37,7 +45,6 @@ eNSINO
 - [Markdown](https://www.markdownguide.org/)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [Prototipagem (Figma)](https://www.figma.com/)
 - [XML](https://www.w3.org/XML/)
 - Outros...
 
@@ -56,8 +63,20 @@ O relatório está dividido nos seguintes capítulos:
 
 ## 👥 Equipa
 
-| Nome            | Função                       |
-|-----------------|------------------------------|
-|Rodrigo Esteves  |------------------------------|
-|Romeu Pinto      |------------------------------|
-|Tiago Mendes     |------------------------------|
+| Nome             | Função                       |
+|----------------- |------------------------------|
+|Rodrigo Esteves   ||index.html (página principal)|
+|                  |  comparações.html|
+|                  |  Deploy no Netlify (publicar o site)|
+|                  |  README .md (documento geral do projeto no GitHub)|
+|                  |  m3 .md (descrição técnica detalhada)|
+|------------------|----------------------------------------------------|
+|Romeu Pinto       |percursos.html|
+|                  | formulário.html|
+|                  |dados.xml + schema XML|
+|------------------|----------------------------------------------------|
+|Tiago Mendes      |style.css (todo o CSS)|
+|                  |script.js (todo o JavaScript)|
+|                  |m1 .md (descrição geral do projeto)|
+|                  |m2 .md (sitemap + wireframes)|
+|                  |m4 .md (apresentação)|
