@@ -28,7 +28,7 @@ Ambos os percursos são válidos e oferecem diferentes oportunidades. A melhor e
 | Pasta       | Conteúdo                                 |
 |-------------|------------------------------------------|
 | `doc/`      | Relatório dividido por capítulos         |
-| `images/`   | Imagens usadas no relatório ou galeria   |
+| `doc/images/`| Imagens usadas no relatório ou galeria  |
 
 ---
 
@@ -36,7 +36,7 @@ Ambos os percursos são válidos e oferecem diferentes oportunidades. A melhor e
 
 | Exemplo 1                         | Exemplo 2                         |
 |----------------------------------|----------------------------------|
-| ![](images/exemplo1.png)         | ![](images/exemplo2.png)         |
+| ![](images/ensino.png)         | ![](images/bento.png)         |
 
 ---
 
@@ -54,10 +54,10 @@ Ambos os percursos são válidos e oferecem diferentes oportunidades. A melhor e
 
 O relatório está dividido nos seguintes capítulos:
 
-- **[Capítulo 1 – Apresentação do Projeto](doc/capitulo1.md)**
-- **[Capítulo 2 – Protótipo e Mapa do Site](doc/capitulo2.md)**
-- **[Capítulo 3 – Produto Final](doc/capitulo3.md)**
-- **[Capítulo 4 – Apresentação Final](doc/capitulo4.md)**
+- **[Capítulo 1 – Apresentação do Projeto](doc/c1.md)**
+- **[Capítulo 2 – Protótipo e Mapa do Site](doc/c2.md)**
+- **[Capítulo 3 – Produto Final](doc/c3.md)**
+- **[Capítulo 4 – Apresentação Final](doc/c4.md)**
 
 ---
 
