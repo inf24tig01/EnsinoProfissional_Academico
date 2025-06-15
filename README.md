@@ -36,7 +36,7 @@ Ambos os percursos são válidos e oferecem diferentes oportunidades. A melhor e
 
 | Exemplo 1                         | Exemplo 2                         |
 |----------------------------------|----------------------------------|
-| ![](images/ensino.png)         | ![](images/bento.png)         |
+| ![](doc/images/ensino.png)         | ![](doc/images/bento.png)         |
 
 ---
 
@@ -45,7 +45,9 @@ Ambos os percursos são válidos e oferecem diferentes oportunidades. A melhor e
 - [Markdown](https://www.markdownguide.org/)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [XML](https://www.w3.org/XML/)
+- [XSD (XML Schema Definition)](https://www.w3.org/XML/Schema)
 - Outros...
 
 ---
