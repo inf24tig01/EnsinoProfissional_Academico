@@ -72,11 +72,12 @@ O relatório está dividido nos seguintes capítulos:
 |Rodrigo Esteves   |Deploy no Netlify (publicar o site)|
 |Rodrigo Esteves   |README .md (documento geral do projeto no GitHub)|
 |Rodrigo Esteves   |m3 .md (descrição técnica detalhada)|
+|Rodrigo Esteves   |script.js (metade do JavaScript)|
 |Romeu Pinto       |percursos.html|
 |Romeu Pinto       | formulário.html|
 |Romeu Pinto       |dados.xml + schema XML|
+|Romeu Pinto       |script.js (metade do JavaScript)|
 |Tiago Mendes      |style.css (todo o CSS)|
-|Tiago Mendes      |script.js (todo o JavaScript)|
 |Tiago Mendes      |m1 .md (descrição geral do projeto)|
 |Tiago Mendes      |m2 .md (sitemap + wireframes)|
 |Tiago Mendes      |m4 .md (apresentação)|
