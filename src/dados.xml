@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dados>
+  <dado>
+    <nome>Bruno Fernandes</nome>
+    <email>bruno_fernandes@example.com</email>
+    <ensino>Ensino Académico</ensino>
+    <satisfacao>8</satisfacao>
+  </dado>
+  <dado>
+    <nome>Joana Silva</nome>
+    <email>joana.silva@example.pt</email>
+    <ensino>Ensino Profissional</ensino>
+    <satisfacao>6</satisfacao>
+  </dado>
+  <dado>
+    <nome>Bernardo Folha</nome>
+    <email>b.folha@example.pt</email>
+    <ensino>Ensino Profissional</ensino>
+    <satisfacao>2</satisfacao>
+</dados>
