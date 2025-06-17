@@ -282,3 +282,30 @@ audio {
 #AnswerTable { 
     display : none; 
 }
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+ 
+input[type="radio"] {
+  display: none;
+}
+ 
+input[type="radio"] + label {
+  padding: 10px 20px;
+  border: 2px solid #1abc9c;
+  border-radius: 20px;
+  background-color: white;
+  color: #1abc9c;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+ 
+input[type="radio"]:checked + label {
+  background-color: #1abc9c;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
