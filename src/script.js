@@ -53,7 +53,7 @@ function submeterFormulario(event) {
   document.getElementById("formulario").reset();
   document.getElementById("valorSatisfacao").innerText = "5";
 
-  //A tabela so é visivel se houver respoasta ao form
+  //A tabela de respostas so é visivel se houver respoasta ao form
   document.getElementById("AnswerTable").style.display = "block";
 }
 
