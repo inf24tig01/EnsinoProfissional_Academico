@@ -1,6 +1,5 @@
   const changeBtn = document.getElementById("change-text-btn"); //depois temos de mudar para nome real do elemento
   const textToChange = document.getElementById("text-to-change"); //depois temos de mudar para nome real do elemento
-
   if (changeBtn && textToChange) {
     changeBtn.addEventListener("click", () => {
       textToChange.textContent = "XML Carregado!";
@@ -58,8 +57,10 @@ function submeterFormulario(event) {
   document.getElementById("AnswerTable").style.display = "block";
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("carregar-escolas-btn").addEventListener("click", carregarEscolasXML);
+});
 
-// função para mostrar as tabelas ao carregar no button para listar dados de escolas 
 function carregarEscolasXML() {
   fetch("dados.xml")
     .then(response => response.text())
@@ -67,15 +68,18 @@ function carregarEscolasXML() {
     .then(xml => {
       const escolas = xml.getElementsByTagName("escolas");
 
+      // Limpar tabelas antigas (se existirem)
+      const profissionalDiv = document.getElementById("profissional");
+      const academicoDiv = document.getElementById("academico");
+      profissionalDiv.innerHTML = "";
+      academicoDiv.innerHTML = "";
+
       for (let i = 0; i < escolas.length; i++) {
         const tipo = escolas[i].getAttribute("tipo");
         const listaEscolas = escolas[i].getElementsByTagName("escola");
 
-        // aqui criamos tabela
+        // Criar tabela
         const tabela = document.createElement("table");
-        tabela.border = 1;
-
-        // t-head da tabela
         const cabecalho = tabela.insertRow();
         ["Nome", "Localidade", "Área", "Contacto"].forEach(titulo => {
           const th = document.createElement("th");
@@ -83,7 +87,7 @@ function carregarEscolasXML() {
           cabecalho.appendChild(th);
         });
 
-        // data para a tabela
+        // Preencher a tabela
         for (let j = 0; j < listaEscolas.length; j++) {
           const escola = listaEscolas[j];
           const linha = tabela.insertRow();
@@ -93,9 +97,9 @@ function carregarEscolasXML() {
           linha.insertCell().textContent = escola.getElementsByTagName("contacto")[0].textContent;
         }
 
-        // permite mostrar a tabela no HTML
-        const destino = document.getElementById(tipo); 
-        if (destino) destino.appendChild(tabela);
+        // Anexar tabela ao respetivo div
+        if (tipo === "profissional") profissionalDiv.appendChild(tabela);
+        else if (tipo === "academico") academicoDiv.appendChild(tabela);
       }
     })
     .catch(error => console.error("Erro ao carregar XML:", error));
