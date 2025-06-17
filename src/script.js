@@ -80,11 +80,6 @@ function carregarEscolasXML() {
 
         // Criar tabela
         const tabela = document.createElement("table");
-        tabela.border = 1;
-        tabela.cellPadding = 8;
-        tabela.cellSpacing = 0;
-
-        // Cabeçalho da tabela
         const cabecalho = tabela.insertRow();
         ["Nome", "Localidade", "Área", "Contacto"].forEach(titulo => {
           const th = document.createElement("th");
