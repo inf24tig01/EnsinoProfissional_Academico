@@ -238,11 +238,14 @@ nav::after {
     font-weight: bold;
     white-space: nowrap;
   }
+}
 
+.transform-scale {
+  transition: transform 0.3s ease;
+}
 
 .transform-scale:hover {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
 
 
@@ -273,7 +276,4 @@ audio {
   width: 100%;
   margin: 15px 0;
   outline: none;
-}
-
-
 }
