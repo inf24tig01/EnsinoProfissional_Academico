@@ -19,6 +19,8 @@
     });
   }
 
+
+//funcao que permite recuperar os dados preenchidos no form
 function submeterFormulario(event) {
   event.preventDefault(); // Impede envio para servidor
 
@@ -50,4 +52,47 @@ function submeterFormulario(event) {
   // Limpa o formulário
   document.getElementById("formulario").reset();
   document.getElementById("valorSatisfacao").innerText = "5";
+}
+
+
+// função para mostrar as tabelas ao carregar no button para listar dados de escolas 
+function carregarEscolasXML() {
+  fetch("dados.xml")
+    .then(response => response.text())
+    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+    .then(xml => {
+      const escolas = xml.getElementsByTagName("escolas");
+
+      for (let i = 0; i < escolas.length; i++) {
+        const tipo = escolas[i].getAttribute("tipo");
+        const listaEscolas = escolas[i].getElementsByTagName("escola");
+
+        // aqui criamos tabela
+        const tabela = document.createElement("table");
+        tabela.border = 1;
+
+        // t-head da tabela
+        const cabecalho = tabela.insertRow();
+        ["Nome", "Localidade", "Área", "Contacto"].forEach(titulo => {
+          const th = document.createElement("th");
+          th.textContent = titulo;
+          cabecalho.appendChild(th);
+        });
+
+        // data para a tabela
+        for (let j = 0; j < listaEscolas.length; j++) {
+          const escola = listaEscolas[j];
+          const linha = tabela.insertRow();
+          linha.insertCell().textContent = escola.getElementsByTagName("nome")[0].textContent;
+          linha.insertCell().textContent = escola.getElementsByTagName("localidade")[0].textContent;
+          linha.insertCell().textContent = escola.getElementsByTagName("area")[0].textContent;
+          linha.insertCell().textContent = escola.getElementsByTagName("contacto")[0].textContent;
+        }
+
+        // permite mostrar a tabela no HTML
+        const destino = document.getElementById(tipo); 
+        if (destino) destino.appendChild(tabela);
+      }
+    })
+    .catch(error => console.error("Erro ao carregar XML:", error));
 }
