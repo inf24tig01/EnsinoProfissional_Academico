@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Estes dados são fictícios e so vão ser usados no contexto do nossa simulação -->
+<escolas tipo="academico"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="dados.xsd">
+  <escola>
+    <nome>Escola Secundária de Artes Visuais</nome>
+    <localidade>Lisboa</localidade>
+    <area>Artes Visuais</area>
+    <contacto>218000111</contacto>
+  </escola>
+  <escola>
+    <nome>Escola Secundária de Ciências e Tecnologias</nome>
+    <localidade>Coimbra</localidade>
+    <area>Ciências e Tecnologias</area>
+    <contacto>239123456</contacto>
+  </escola>
+  <escola>
+    <nome>Escola Secundária de Línguas e Humanidades</nome>
+    <localidade>Braga</localidade>
+    <area>Línguas e Humanidades</area>
+    <contacto>253654789</contacto>
+  </escola>
+</escolas>
+
+<escolas tipo="profissional"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="dados.xsd">
+  <escola>
+    <nome>Escola Profissional de Turismo do Porto</nome>
+    <localidade>Porto</localidade>
+    <area>Turismo</area>
+    <contacto>220000111</contacto>
+  </escola>
+  <escola>
+    <nome>Escola Profissional de Informática do Porto</nome>
+    <localidade>Porto</localidade>
+    <area>Informática</area>
+    <contacto>220000222</contacto>
+  </escola>
+  <escola>
+    <nome>Escola Profissional de Saúde do Porto</nome>
+    <localidade>Porto</localidade>
+    <area>Saúde</area>
+    <contacto>220000333</contacto>
+  </escola>
+</escolas>
