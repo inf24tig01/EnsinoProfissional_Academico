@@ -238,6 +238,7 @@ nav::after {
     font-weight: bold;
     white-space: nowrap;
   }
+
 }
 
 .transform-scale {
@@ -264,7 +265,7 @@ nav::after {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
-video {
+iframe {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -276,4 +277,35 @@ audio {
   width: 100%;
   margin: 15px 0;
   outline: none;
+}
+
+#AnswerTable { 
+    display : none; 
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+ 
+input[type="radio"] {
+  display: none;
+}
+ 
+input[type="radio"] + label {
+  padding: 10px 20px;
+  border: 2px solid #1abc9c;
+  border-radius: 20px;
+  background-color: white;
+  color: #1abc9c;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+ 
+input[type="radio"]:checked + label {
+  background-color: #1abc9c;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
