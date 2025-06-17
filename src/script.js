@@ -27,7 +27,8 @@ function submeterFormulario(event) {
   const nome = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
   const data = document.getElementById("dataNascimento").value;
-  const ensino = document.getElementById("ensino").value;
+  const ensinoSelected = document.querySelector('input[name="ensino"]:checked');
+  const ensino = ensinoSelected ? ensinoSelected.value : "";
   const satisfacao = document.getElementById("satisfacao").value;
 
   // Opcional: validação extra
