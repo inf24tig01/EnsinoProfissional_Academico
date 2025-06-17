@@ -44,13 +44,11 @@
         <label for="dataNascimento">Data de nascimento :</label>
         <input type="date" id="dataNascimento" name="dataNascimento" required max="">
         
-        <label for="ensino">Tipo de ensino que frequentas ou desejas frequentar :</label>
-        <input list="tipo_ensino" name="ensino" id="ensino">
-        <datalist id="tipo_ensino">
-          <option value="Ensino Académico">
-          <option value="Ensino Profissional">
-          <option value="Outro">
-        </datalist>
+        <label>Tipo de ensino que frequentas ou desejas frequentar:</label>
+        <input type="radio" id="academico" name="ensino" value="Ensino Académico" required>
+        <label for="academico">Ensino Académico</label>
+        <input type="radio" id="profissional" name="ensino" value="Ensino Profissional">
+        <label for="profissional">Ensino Profissional</label>
 
         <label for="satisfacao">Se ja frequentas ensino academico ou profesional indica o quanto satisfeito estás (de 1 a 10) :
           <span id="valorSatisfacao">5</span>
