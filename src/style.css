@@ -318,9 +318,12 @@ footer {
   font-size: 0.9rem;
   margin-top: 30px;
   overflow: auto;
+  display:flex;
+  justify-content: space-between
 }
 
 footer p {
+  margin: 0;
   text-align: left;
   align-items: center;
 }
@@ -337,7 +340,7 @@ footer a:hover {
 
 
 .footer-logo {
-  float: right;
   height: 3em;
   display: block;
+  margin-left: auto;
 }
