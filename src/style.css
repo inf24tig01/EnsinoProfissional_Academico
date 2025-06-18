@@ -336,15 +336,9 @@ footer a:hover {
   color: #16a085;
 }
 
-.footer_ajust {
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  display: flex;
-  width: 100%;
-}
 
 .footer-logo {
+  float: right;
   height: 3em;
   display: block;
 }
