@@ -1,11 +1,3 @@
-const changeBtn = document.getElementById("carregar-escolas-btn");
-
-if (changeBtn) {
-  changeBtn.addEventListener("click", () => {
-    changeBtn.textContent = "XML Carregado!";
-  });
-}
-
   const hoverTarget = document.getElementById("carregar-escolas-btn");
 
   if (hoverTarget) {
@@ -58,49 +50,69 @@ function submeterFormulario(event) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("carregar-escolas-btn").addEventListener("click", carregarEscolasXML);
+  // Pega no botão "Carregar Escolas" e adiciona um evento de clique
+  const btn = document.getElementById("carregar-escolas-btn");
+  btn.addEventListener("click", () => {
+    carregarEscolasXML();          // Chama a função que carrega e processa o XML
+    btn.textContent = "XML Carregado!";  // Muda o texto do botão após carregar
+  });
 });
 
 function carregarEscolasXML() {
-  fetch("dados.xml")
-    .then(response => response.text())
-    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+  fetch("dados.xml")   // Faz o pedido para buscar o ficheiro XML "dados.xml"
+    .then(response => response.text())   // Recebe a resposta e extrai o conteúdo em texto
+    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml")) 
+    // Transforma o texto XML numa estrutura XML manipulável pelo DOM (parser)
     .then(xml => {
+      // Pega todos os elementos <escolas> do XML (cada um com um tipo: profissional ou academico)
       const escolas = xml.getElementsByTagName("escolas");
 
-      // Limpar tabelas antigas (se existirem)
+      // Mostra os títulos e divs que estavam escondidos no HTML
+      document.getElementById("profissional-title").hidden = false;
+      document.getElementById("profissional").hidden = false;
+      document.getElementById("academico-title").hidden = false;
+      document.getElementById("academico").hidden = false;
+
+      // Apanha as divs onde as tabelas vão ser inseridas
       const profissionalDiv = document.getElementById("profissional");
       const academicoDiv = document.getElementById("academico");
+
+      // Limpa o conteúdo antigo antes de inserir as novas tabelas
       profissionalDiv.innerHTML = "";
       academicoDiv.innerHTML = "";
 
+      // Para cada conjunto de escolas no XML
       for (let i = 0; i < escolas.length; i++) {
-        const tipo = escolas[i].getAttribute("tipo");
-        const listaEscolas = escolas[i].getElementsByTagName("escola");
+        const tipo = escolas[i].getAttribute("tipo");  // Lê o tipo (profissional ou academico)
+        const listaEscolas = escolas[i].getElementsByTagName("escola");  // Lista das escolas desse tipo
 
-        // Criar tabela
+        // Cria uma tabela nova para colocar as escolas
         const tabela = document.createElement("table");
+
+        // Cria a primeira linha da tabela com os títulos das colunas
         const cabecalho = tabela.insertRow();
         ["Nome", "Localidade", "Área", "Contacto"].forEach(titulo => {
           const th = document.createElement("th");
-          th.textContent = titulo;
-          cabecalho.appendChild(th);
+          th.textContent = titulo;   // Define o texto do cabeçalho
+          cabecalho.appendChild(th); // Adiciona a célula à linha do cabeçalho
         });
 
-        // Preencher a tabela
+        // Para cada escola da lista
         for (let j = 0; j < listaEscolas.length; j++) {
           const escola = listaEscolas[j];
-          const linha = tabela.insertRow();
+          const linha = tabela.insertRow();  // Cria uma linha nova na tabela
+
+          // Insere as células da linha com os dados da escola
           linha.insertCell().textContent = escola.getElementsByTagName("nome")[0].textContent;
           linha.insertCell().textContent = escola.getElementsByTagName("localidade")[0].textContent;
           linha.insertCell().textContent = escola.getElementsByTagName("area")[0].textContent;
           linha.insertCell().textContent = escola.getElementsByTagName("contacto")[0].textContent;
         }
 
-        // Anexar tabela ao respetivo div
+        // Anexa a tabela criada à div correta, conforme o tipo da escola
         if (tipo === "profissional") profissionalDiv.appendChild(tabela);
         else if (tipo === "academico") academicoDiv.appendChild(tabela);
       }
     })
-    .catch(error => console.error("Erro ao carregar XML:", error));
+    .catch(error => console.error("Erro ao carregar XML:", error));  // Caso ocorra erro, mostra na consola
 }
