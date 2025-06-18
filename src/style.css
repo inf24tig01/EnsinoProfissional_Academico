@@ -313,15 +313,17 @@ input[type="radio"]:checked + label {
 footer {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
-  text-align: center;
   padding: 20px 10px;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
   font-size: 0.9rem;
   margin-top: 30px;
+  overflow: auto;
 }
 
 footer p {
   margin: 0;
+  text-align: left;
+  align-items: center;
 }
 
 footer a {
@@ -332,4 +334,10 @@ footer a {
 
 footer a:hover {
   color: #16a085;
+}
+
+.footer-logo {
+  float: right;
+  height: 3em;
+  display: block;
 }
